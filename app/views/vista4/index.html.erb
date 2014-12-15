@@ -1,0 +1,78 @@
+<div class="navbar-wrapper">
+	
+			<div class ="container">
+				
+				<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				
+						<div class="container">
+							
+							<div class="navbar-header"
+							
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only"> toggle navigation</span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+								<span class="icon-bar"> </span>
+							</button>
+							
+							<a class="navbar-brand" href="/vista1/index">Observatorio BD</a>
+							
+							</div>
+							
+								
+								<ul class="nav navbar-nav">
+								
+									<li><a href="/vista1/index"> Inicio</a></li>
+									<li><a href="/vista2/index"> Consolas</a></li>
+									<li><a href="/vista3/index"> Versus</a></li>
+									<li class="active"><a href="/vista4/index"> Juegos</a></li>
+									
+									
+									
+								</ul>
+							</div>
+						</div>
+					
+				</div>
+				
+			</div><!-- final container-->
+	
+	</div><!-- final navbar-->
+	<div class="container">
+	<img src="/images/juegos.jpg" style = "position:relative; top:0; rigth: 100; left:20; min-width:100%; height:300px;">
+<div class="container">
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Consolas</th>
+            <th> Top 3 de los juegos mas nombrados en Twitter</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        	<td>Play Station 4</td>
+            <td><%@juegosplay.each do |n|%>
+            	<%=n.nombre_juego%>,
+            <%end%></td>
+            
+        </tr>
+        <tr>
+            <td>Xbox One</td>
+            <td><%@juegosxbox.each do |n|%>
+            	<%=n.nombre_juego%>,
+            <%end%></td>
+           
+        </tr>
+        <tr>
+            <td>Wii U</td>
+            <td><%@juegoswii.each do |n|%>
+            	<%=n.nombre_juego%>,
+            <%end%></td>
+           
+        </tr>
+        
+
+    </tbody>
+</table>
+</div>
+</div>
